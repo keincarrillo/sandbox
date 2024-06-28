@@ -1,1 +1,8 @@
-@import './base/reset'
+@import './abstracts/hero';
+@import './base/fonts';
+@import './base/colors';
+@import './base/reset';
+
+body {
+    font-family: 'Urbanist', sans-serif;
+}
