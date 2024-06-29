@@ -1,0 +1,55 @@
+@use '../base/colors' as v;
+
+// Strategy Styles
+.strategy {
+    padding: 50px 0 100px;
+    background-color: v.$gray;
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+
+    }
+    &__info {
+        & h2 {
+            margin-bottom: 30px;
+        }
+        & p {
+            margin-bottom: 20px;
+        }
+    }
+    &__cards-container {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        &__card {
+            align-items: center;
+            background-color: v.$white;
+            box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60/ 39%);
+            display: flex;
+            gap: 20px;
+            max-width: 520px;
+            padding: 20px;
+            &:nth-child(2) {
+                position: relative;
+                left: 50px;
+            }
+            &:nth-child(3) {
+                position: relative;
+                left: 20px;
+            }
+        }
+        &__order {
+            background-color: v.$skyblue;
+            border-radius: 100%;
+            color: v.$primary-color;
+            font-weight: 600;
+            font-size: 22px;
+            padding: 10px 12px;
+            width: fit-content;
+        }
+    }
+
+    
+}
+

@@ -2,10 +2,31 @@
 
 // Testimoninals Styles
 .testimonials {
+    background-color: v.$light-gray;
+    padding: 70px 0;
+    & h2 {
+        text-align: center;
+        max-width: 670px;
+        margin: 0 auto 50px;
+    }
     &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
         &__item {
+            background-color: v.$white;
+            padding: 20px;
             & p {
                 font-size: 18px;
+            }
+        }
+        &__author {
+            display: flex;
+            gap: 30px;
+            justify-content: flex-start;
+            margin-top: 30px;
+            & img {
+                max-width: 70px;
             }
         }
     }

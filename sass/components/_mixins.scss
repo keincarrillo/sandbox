@@ -9,22 +9,24 @@ p {
 h2 {
     color: v.$heading-color;
     font-size: 42px;
+    font-weight: 600;
     line-height: 50px;
 } 
 
 h3 {
     color: v.$heading-color;
     font-size: 23px;
+    font-weight: 600;
     line-height: 32px;
 }
 
 .btn-primary{
     background-color: v.$primary-color;
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60/ 39%);
     color: v.$white;
     display: block;
-    padding: 8px 10px;
+    padding: 16px;
     text-decoration: none;
     width: fit-content;
 }
