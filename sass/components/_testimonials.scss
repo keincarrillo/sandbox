@@ -1,0 +1,12 @@
+@use '../base/colors' as v;
+
+// Testimoninals Styles
+.testimonials {
+    &__list {
+        &__item {
+            & p {
+                font-size: 18px;
+            }
+        }
+    }
+}

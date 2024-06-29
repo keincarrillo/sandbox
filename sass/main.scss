@@ -1,8 +1,17 @@
-@import './abstracts/hero';
+@import './components/hero';
 @import './base/fonts';
 @import './base/colors';
 @import './base/reset';
-
+@import './components/hero';
+@import './components/nav';
+@import './components/mixins';
+@import './components/services';
+@import './components/testimonials';
 body {
     font-family: 'Urbanist', sans-serif;
+}
+
+main {
+    max-width: 1280px;
+    margin: 0 auto;
 }

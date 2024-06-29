@@ -1,0 +1,20 @@
+@use '../base/colors' as v;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    & ul {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        & li {
+            & a {
+                color: v.$heading-color;
+                font-weight: 600;
+                text-decoration: none;
+                // minuto 44 parte 2
+            }
+        }
+    }
+}

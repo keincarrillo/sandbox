@@ -1,0 +1,31 @@
+@use '../base/colors' as v;
+
+p {
+    color: v.$paragraph-color;
+    font-size: 17px;
+    line-height: 29px;
+}
+
+h2 {
+    color: v.$heading-color;
+    font-size: 42px;
+    line-height: 50px;
+} 
+
+h3 {
+    color: v.$heading-color;
+    font-size: 23px;
+    line-height: 32px;
+}
+
+.btn-primary{
+    background-color: v.$primary-color;
+    border-radius: 10px;
+    box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60/ 39%);
+    color: v.$white;
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    width: fit-content;
+}
+
