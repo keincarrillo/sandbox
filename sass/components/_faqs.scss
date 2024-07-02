@@ -1,0 +1,31 @@
+@use '../base/colors' as v;
+
+// Faqs Styles
+.faqs {
+    background-color: v.$gray;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    padding: 50px 0 100px;
+    & h2, & p {
+        margin-bottom: 20px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &__item {
+            box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 12%);
+            & details {
+                padding: 10px;
+                background-color: v.$white;
+                border-radius: 10px;
+                & summary {
+                    background-color: v.$white;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
