@@ -1,0 +1,16 @@
+@use '../base/colors' as v;
+
+footer {
+    background-color: v.$heading-color;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 0;
+    & h2 {
+        color: v.$white;
+    }
+    & a {
+        justify-self: center;
+    }
+}
