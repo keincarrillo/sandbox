@@ -1,0 +1,22 @@
+@use '../base/colors' as v;
+
+// Projects Styles
+.projects {
+    padding-bottom: 40px;
+    & h2 {
+        margin: 0 auto 50px;
+        max-width: 800px;
+        text-align: center;
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+    }
+    &__project {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+}
