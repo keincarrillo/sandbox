@@ -1,0 +1,51 @@
+@use '../base/colors' as v;
+
+// Team Styles
+.team {
+    align-items: center;
+    background-color: v.$gray;
+    row-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) auto;
+    padding: 50px 0 100px;
+    &__statistics {
+        display: flex;
+        gap: 100px;
+        &__item {
+            align-items: center;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            &__image {
+                justify-content: center;
+                background-color: v.$skyblue;
+                border-radius: 100%;
+                display: flex;
+                padding: 16px;
+                width: fit-content;
+            }
+            text-align: center;
+            & h3 {
+                font-size: 41px;
+            }
+        }
+    }
+    &__list {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        &__item {
+            background-color: v.$white;
+            box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 12%);
+            padding: 20px;
+            & h3 {
+                font-size: 20px;
+                & + p {
+                    color: v.$grayish;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
