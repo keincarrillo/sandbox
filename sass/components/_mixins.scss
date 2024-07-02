@@ -23,11 +23,15 @@ h3 {
 .btn-primary{
     background-color: v.$primary-color;
     border-radius: 25px;
-    box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60/ 39%);
+    box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 12%);
     color: v.$white;
     display: block;
     padding: 16px;
     text-decoration: none;
     width: fit-content;
+}
+
+summary::marker {
+    color: v.$primary-color;
 }
 

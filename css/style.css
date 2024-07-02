@@ -91,12 +91,16 @@ h3 {
 .btn-primary {
   background-color: #5eb9f0;
   border-radius: 25px;
-  box-shadow: 1px 0.1rem 0.5rem 0px rgba(60, 60, 60, 0.39);
+  box-shadow: 1px 0.1rem 0.5rem 0px rgba(60, 60, 60, 0.12);
   color: #ffffff;
   display: block;
   padding: 16px;
   text-decoration: none;
   width: fit-content;
+}
+
+summary::marker {
+  color: #5eb9f0;
 }
 
 .services {
@@ -184,7 +188,7 @@ h3 {
 .strategy__cards-container__card {
   align-items: center;
   background-color: #ffffff;
-  box-shadow: 1px 0.1rem 0.5rem 0px rgba(60, 60, 60, 0.39);
+  box-shadow: 1px 0.1rem 0.5rem 0px rgba(60, 60, 60, 0.12);
   display: flex;
   gap: 20px;
   max-width: 520px;
@@ -206,6 +210,84 @@ h3 {
   font-size: 22px;
   padding: 10px 12px;
   width: fit-content;
+}
+
+.team {
+  align-items: center;
+  background-color: #fefefe;
+  row-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) auto;
+  padding: 50px 0 100px;
+}
+.team__statistics {
+  display: flex;
+  gap: 100px;
+}
+.team__statistics__item {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  text-align: center;
+}
+.team__statistics__item__image {
+  justify-content: center;
+  background-color: #e5f4fd;
+  border-radius: 100%;
+  display: flex;
+  padding: 16px;
+  width: fit-content;
+}
+.team__statistics__item h3 {
+  font-size: 41px;
+}
+.team__list {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.team__list__item {
+  background-color: #ffffff;
+  box-shadow: 1px 0.1rem 0.5rem 0px rgba(60, 60, 60, 0.12);
+  padding: 20px;
+}
+.team__list__item h3 {
+  font-size: 20px;
+}
+.team__list__item h3 + p {
+  color: #aab0bc;
+  text-transform: uppercase;
+}
+
+.faqs {
+  background-color: #fefefe;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  padding: 50px 0 100px;
+}
+.faqs h2, .faqs p {
+  margin-bottom: 20px;
+}
+.faqs__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.faqs__list__item {
+  box-shadow: 1px 0.1rem 0.5rem 0px rgba(60, 60, 60, 0.12);
+}
+.faqs__list__item details {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.faqs__list__item details summary {
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 body {
