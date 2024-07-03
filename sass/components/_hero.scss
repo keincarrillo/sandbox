@@ -1,8 +1,10 @@
 @use '../base/colors' as v;
 
+// Hero Styles
 .hero {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 30px 0px;
     & h1 {
@@ -21,4 +23,19 @@
         line-height: 34px;
         margin-bottom: 30px;
     }
+}
+
+// Media Querys
+@media (min-width: 768px) {
+    .hero {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 1280px) {
+    
 }
