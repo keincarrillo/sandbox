@@ -16,7 +16,8 @@
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 body {
@@ -25,12 +26,6 @@ body {
 
 img {
     max-width: 100%;
-}
-
-@media (min-width: 768px) {
-    .container {
-        padding: 0 15px;
-    }
 }
 
 

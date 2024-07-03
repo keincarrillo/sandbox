@@ -20,7 +20,7 @@
     }
     &__cards-container {
         display: flex;
-        gap: 20px;
+        gap: 30px;
         flex-direction: column;
         &__card {
             align-items: center;
@@ -49,6 +49,15 @@
         &-container {
             grid-template-columns: repeat(2, 1fr);
         }
+    }
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 1280px) {
+    .strategy {
         &__cards-container {
             &__card {
                 &:nth-child(2) {
@@ -62,13 +71,5 @@
             }
         }
     }
-}
-
-@media (min-width: 1024px) {
-    
-}
-
-@media (min-width: 1280px) {
-    
 }
 

@@ -4,7 +4,7 @@
 .faqs {
     background-color: v.$gray;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 80px;
     padding: 50px 0 100px;
     & h2, & p {
@@ -28,4 +28,22 @@
             }
         }
     }
+}
+
+// Media Querys
+@media (min-width: 768px) {
+    .faqs {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .faqs {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+    }
+}
+
+@media (min-width: 1280px) {
+    
 }
