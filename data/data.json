@@ -65,5 +65,41 @@
             "area": "Lorem, ipsum.",
             "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, aliquid a quis dolore beatae quisquam neque ut autem porro illo commodi reiciendis expedita?"
         }
+    ],
+    "faqs": [
+        {
+            "id": 0,
+            "question": "Lorem ipsum dolor sit amet.",
+            "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellendus non porro quisquam labore nesciunt velit, sint, cupiditate cumque quos quibusdam impedit, eoseaque. Dignissimos cumque incidunt perspiciatis quidem adipisci."
+        },
+        {
+            "id": 1,
+            "question": "Lorem ipsum dolor sit amet.",
+            "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellendus non porro quisquam labore nesciunt velit, sint, cupiditate cumque quos quibusdam impedit, eoseaque. Dignissimos cumque incidunt perspiciatis quidem adipisci."
+        },
+        {
+            "id": 2,
+            "question": "Lorem ipsum dolor sit amet.",
+            "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellendus non porro quisquam labore nesciunt velit, sint, cupiditate cumque quos quibusdam impedit, eoseaque. Dignissimos cumque incidunt perspiciatis quidem adipisci."
+        },
+        {
+            "id": 3,
+            "question": "Lorem ipsum dolor sit amet.",
+            "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellendus non porro quisquam labore nesciunt velit, sint, cupiditate cumque quos quibusdam impedit, eoseaque. Dignissimos cumque incidunt perspiciatis quidem adipisci."
+        }
+    ],
+    "projects": [
+        {
+            "id": 0,
+            "img": "./images/projects/project1.jpg",
+            "title": "Nombre del proyecto",
+            "category": "Category"
+        },
+        {
+            "id": 1,
+            "img": "./images/projects/project2.jpg",
+            "title": "Nombre del proyecto",
+            "category": "Category"
+        }
     ]
 }

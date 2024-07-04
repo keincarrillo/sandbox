@@ -39,12 +39,77 @@ async function getTestimonials() {
             testimonial.image,
             testimonial.area,
             testimonial.testimonial
-        )
+        );
     });
 }
 
+async function getFaqs() {
+    const response = await fetch ("http://localhost:3000/faqs");
+    const faqs = await response.json();
+
+    faqs.forEach(function (faq) {
+        createFaqItem(
+            faq.question,
+            faq.answer
+        );
+    });
+}
+
+async function getProjects() {
+    const response = await fetch ("http://localhost:3000/projects");
+    const projects = await response.json();
+
+    projects.forEach(function (project) {
+        createProjectItem(
+            project.img,
+            project.title,
+            project.category
+        );
+    });
+}
+
+
 getServices();
 getTestimonials();
+getFaqs();
+getProjects();
+
+function createProjectItem(img, title, category) {
+    const projectList = document.querySelector(".projects__container");
+    const projectItemContainer = document.createElement("div");
+    projectItemContainer.classList.add("projects__project");
+
+    const imageElement = document.createElement("img");
+    imageElement.setAttribute("src", img);
+
+    const projectInfoContainer = document.createElement("div");
+    projectInfoContainer.classList.add("projects__project__info");
+    const projectTitle = document.createElement("h3");
+    projectTitle.textContent = title;
+    const projectCategory = document.createElement("p");
+    projectCategory.textContent = category;
+
+    projectItemContainer.append(imageElement, projectInfoContainer);
+    projectInfoContainer.append(projectTitle, projectCategory);
+    projectList.append(projectItemContainer);
+
+}
+
+function createFaqItem(question, answer) {
+    const faqsList = document.querySelector(".faqs__list");
+    const faqItemContainer = document.createElement("div");
+    faqItemContainer.classList.add("faqs__list__item");
+
+    const faqContainer = document.createElement("details");
+    const faqQuestion = document.createElement("summary");
+    faqQuestion.textContent = question;
+    const faqAnswer = document.createElement("p");
+    faqAnswer.textContent = answer;
+
+    faqContainer.append(faqQuestion, faqAnswer);
+    faqItemContainer.append(faqContainer);
+    faqsList.append(faqItemContainer);
+}
 
 function createServiceItem(imageURL, title, description, linkText, linkHref) {
     const servicesList = document.querySelector(".services__list");
