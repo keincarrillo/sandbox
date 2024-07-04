@@ -316,6 +316,7 @@ summary::marker {
   padding: 50px 0 100px;
 }
 .team__statistics {
+  gap: 15px;
   display: flex;
   flex-wrap: wrap;
 }
