@@ -101,5 +101,55 @@
             "title": "Nombre del proyecto",
             "category": "Category"
         }
+    ],
+    "team": [
+        {
+            "id": 0,
+            "img": "./images/team/te1.jpg",
+            "name": "Lorem, ipsum.",
+            "area": "Lorem, ipsum dolor.",
+            "slogan": "Lorem ipsum dolor, sit amet consectetur adipisicing."
+        },
+        {
+            "id": 1,
+            "img": "./images/team/te2.jpg",
+            "name": "Lorem, ipsum.",
+            "area": "Lorem, ipsum dolor.",
+            "slogan": "Lorem ipsum dolor, sit amet consectetur adipisicing."
+        },
+        {
+            "id": 2,
+            "img": "./images/team/te3.jpg",
+            "name": "Lorem, ipsum.",
+            "area": "Lorem, ipsum dolor.",
+            "slogan": "Lorem ipsum dolor, sit amet consectetur adipisicing."
+        },
+        {
+            "id": 3,
+            "img": "./images/team/te4.jpg",
+            "name": "Lorem, ipsum.",
+            "area": "Lorem, ipsum dolor.",
+            "slogan": "Lorem ipsum dolor, sit amet consectetur adipisicing."
+        }
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "order": "01",
+            "title": "Collect ideas",
+            "description": "Lorem ipsum dolor sit amet consectetur."
+        },
+        {
+            "id": 1,
+            "order": "02",
+            "title": "Collect ideas",
+            "description": "Lorem ipsum dolor sit amet consectetur."
+        },
+        {
+            "id": 2,
+            "order": "03",
+            "title": "Collect ideas",
+            "description": "Lorem ipsum dolor sit amet consectetur."
+        }
     ]
 }
