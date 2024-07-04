@@ -10,6 +10,7 @@
   "author": "Kein Isaac",
   "license": "ISC",
   "dependencies": {
+    "json-server": "^1.0.0-beta.1",
     "node-sass": "^9.0.0"
   }
 }

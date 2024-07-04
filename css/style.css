@@ -96,8 +96,28 @@ nav ul {
   gap: 40px;
   list-style: none;
 }
-nav ul li a {
+nav ul span {
+  position: absolute;
+  right: 15px;
+  top: 20px;
   color: #343f52;
+  font-weight: 600;
+}
+nav ul.active {
+  color: #ffffff;
+  display: flex;
+  position: absolute;
+  background-color: #5eb9f0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  flex-direction: column;
+  padding: 50px 0 20px;
+  text-align: center;
+  width: 100%;
+}
+nav ul li a {
+  color: #ffffff;
   font-weight: 600;
   text-decoration: none;
 }
@@ -109,8 +129,14 @@ nav ul li a {
 }
 
 @media (min-width: 768px) {
+  nav .btn-nav {
+    display: none;
+  }
   nav ul {
     display: flex;
+  }
+  nav ul li a {
+    color: #60697b;
   }
 }
 p {

@@ -5,9 +5,29 @@ nav {
         display: none;
         gap: 40px;
         list-style: none;
+        & span {
+            position: absolute;
+            right: 15px;
+            top: 20px;
+            color: v.$heading-color;
+            font-weight: 600;
+        }
+        &.active {
+            color: v.$white;
+            display: flex;
+            position: absolute;
+            background-color: v.$primary-color;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            flex-direction: column;
+            padding: 50px 0 20px;
+            text-align: center;
+            width: 100%;
+        }
         & li {
             & a {
-                color: v.$heading-color;
+                color: v.$white;
                 font-weight: 600;
                 text-decoration: none;
             }
@@ -24,8 +44,16 @@ nav {
 // Media Querys
 @media (min-width: 768px) {
     nav {
+        & .btn-nav {
+            display: none;
+        }
         & ul {
             display: flex;
+            & li {
+                & a {
+                    color: v.$paragraph-color;
+                }
+            }  
         }
     }
 }
