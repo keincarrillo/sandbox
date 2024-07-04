@@ -68,11 +68,81 @@ async function getProjects() {
     });
 }
 
+async function getTeam() {
+    const response = await fetch ("http://localhost:3000/team");
+    const teams = await response.json();
+
+    teams.forEach(function (team) {
+        createTeamItem(
+            team.img,
+            team.name,
+            team.area,
+            team.slogan
+        );
+    });
+}
+
+async function getStrategyCards() {
+    const response = await fetch ("http://localhost:3000/cards");
+    const cards = await response.json();
+
+    cards.forEach(function (card) {
+        createCardItem(
+            card.order,
+            card.title,
+            card.description
+        );
+    });
+}
 
 getServices();
 getTestimonials();
 getFaqs();
 getProjects();
+getTeam();
+getStrategyCards();
+
+function createCardItem (order, title, description) {
+    const orderList = document.querySelector(".strategy__cards-container");
+    
+    const cardItemContainer = document.createElement("div");
+    cardItemContainer.classList.add("strategy__cards-container__card");
+
+    const orderItemContainer = document.createElement("div");
+    orderItemContainer.classList.add("strategy__cards-container__order");
+    orderItemContainer.textContent = order;
+    const infoItemContainer = document.createElement("div");
+    infoItemContainer.classList.add("strategy__cards-container__info");
+
+    const titleCard = document.createElement("h3");
+    titleCard.textContent = title;
+    const descriptionCard = document.createElement("p");
+    descriptionCard.textContent = description;
+
+    infoItemContainer.append(titleCard, descriptionCard);
+    cardItemContainer.append(orderItemContainer, infoItemContainer);
+    orderList.append(cardItemContainer);
+}
+
+function createTeamItem(img, name, area, slogan) {
+    const teamList = document.querySelector(".team__list");
+
+    const teamItemContainer = document.createElement("div");
+    teamItemContainer.classList.add("team__list__item");
+
+    const image = document.createElement("img");
+    image.setAttribute("src", img);
+    const titleName = document.createElement("h3");
+    titleName.textContent = name;
+    const titleArea = document.createElement("p");
+    titleArea.textContent = area;
+    const titleSlogan = document.createElement("p");
+    titleSlogan.textContent = slogan;
+
+    teamItemContainer.append(image, titleName, titleArea, titleSlogan);
+    teamList.append(teamItemContainer);
+    
+}
 
 function createProjectItem(img, title, category) {
     const projectList = document.querySelector(".projects__container");
