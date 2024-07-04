@@ -1,0 +1,69 @@
+{
+    "services": [
+        {
+            "id": 0,
+            "title":  "Web Design",
+            "image": "./images/services/service1.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore cum assumenda, eaque ipsa enim?",
+            "link": "/"
+        },
+        {
+            "id": 1,
+            "title":  "Web Design",
+            "image": "./images/services/service2.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore cum assumenda, eaque ipsa enim?",
+            "link": "/"
+        },
+        {
+            "id": 2,
+            "title":  "Web Design",
+            "image": "./images/services/service3.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore cum assumenda, eaque ipsa enim?",
+            "link": "/"
+        }
+    ],
+    "testimonials": [
+        {
+            "id": 0,
+            "author":  "Lorem, ipsum.",
+            "image": "./images/team/te1.jpg",
+            "area": "Lorem, ipsum.",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, aliquid a quis dolore beatae quisquam neque ut autem porro illo commodi reiciendis expedita?"
+        },
+        {
+            "id": 1,
+            "author":  "Lorem, ipsum.",
+            "image": "./images/team/te2.jpg",
+            "area": "Lorem, ipsum.",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, aliquid a quis dolore beatae quisquam neque ut autem porro illo commodi reiciendis expedita?"
+        },
+        {
+            "id": 2,
+            "author":  "Lorem, ipsum.",
+            "image": "./images/team/te3.jpg",
+            "area": "Lorem, ipsum.",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, aliquid a quis dolore beatae quisquam neque ut autem porro illo commodi reiciendis expedita?"
+        },
+        {
+            "id": 3,
+            "author":  "Lorem, ipsum.",
+            "image": "./images/team/te4.jpg",
+            "area": "Lorem, ipsum.",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, aliquid a quis dolore beatae quisquam neque ut autem porro illo commodi reiciendis expedita?"
+        },
+        {
+            "id": 4,
+            "author":  "Lorem, ipsum.",
+            "image": "./images/team/te4.jpg",
+            "area": "Lorem, ipsum.",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, aliquid a quis dolore beatae quisquam neque ut autem porro illo commodi reiciendis expedita?"
+        },
+        {
+            "id": 5,
+            "author":  "Lorem, ipsum.",
+            "image": "./images/team/te4.jpg",
+            "area": "Lorem, ipsum.",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, aliquid a quis dolore beatae quisquam neque ut autem porro illo commodi reiciendis expedita?"
+        }
+    ]
+}
